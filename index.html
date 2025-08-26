@@ -1,24 +1,250 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 3: Vibe Coding y tu Primera Creación con IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 3: Vibe Coding y tu Primera Creación con IA</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li><strong>Objetivo Conceptual:</strong> Que los estudiantes entiendan el concepto de <strong>Vibe Coding</strong>: cómo expresar una idea creativa ("vibe") a Xolo y recibir a cambio un plan de instrucciones llamado **Gnius Code Spark (GCS)**.</li>
+                                        <li><strong>Objetivo de Habilidad:</strong> Que los estudiantes aprendan a leer e interpretar un GCS simple, identificando las acciones clave y las estructuras como `AL INICIO` y `POR SIEMPRE`.</li>
+                                        <li><strong>Objetivo Práctico:</strong> Que los estudiantes realicen su primer ejercicio de Vibe Coding, traduciendo exitosamente un GCS generado por Xolo a bloques funcionales en MakeCode.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡¿Qué es el Vibe Coding?:</strong> Introducción al concepto de Vibe Coding y GCS.</li>
+                                        <li><strong class="tactic-highlight">⚡Nuestra Primera Conversación con Xolo:</strong> Interacción guiada para aprender la metodología.</li>
+                                        <li><strong class="tactic-highlight">⚡¡Nuestro Primer Gnius Storm!:</strong> Creación práctica de un proyecto con IA.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un programa funcional en MakeCode que muestra un corazón parpadeante en el simulador del Micro:bit, creado siguiendo el GCS generado por Xolo.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Computadoras o tabletas para cada estudiante o pareja con acceso a MakeCode y al chat de Xolo.</li>
+                                        <li><strong>Proyecto de ejemplo del facilitador:</strong> Un proyecto de MakeCode que muestre un corazón parpadeante, para demostrar el resultado final.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li>Realizar el ejercicio completo de "corazón parpadeante" de antemano. Esto es crucial para anticipar dónde podrían atorarse los estudiantes y para guiar la traducción del GCS a bloques de forma fluida.</li>
+                                        <li>Tener la interfaz de MakeCode y el chat de Xolo listos para ser proyectados.</li>
+                                        <li>Asegurarse de que el prompt para Xolo ("Enséñame a trabajar contigo...") genere una respuesta consistente y adecuada para la clase.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: ¿Qué es el Vibe Coding? ⏰ 10 minutos</h2>
+                <p>Introduce el concepto central de la metodología Gnius: Vibe Coding y el Gnius Code Spark (GCS).</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Idea y el Traductor Mágico ⏰ 5 minutos</h3>
+                            <p>(Proyectar diapositiva con el título "¿Qué es el Vibe Coding?" y un gráfico que muestre un niño con una idea -> Xolo -> Bloques de código).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola de nuevo, inventores! La semana pasada preparamos nuestro laboratorio digital. Hoy, vamos a aprender el secreto más grande de Gnius Club: cómo hablar con las computadoras usando nuestras ideas. Piensen en esto: ¿alguna vez han tenido una idea súper genial en su cabeza, como un dibujo o una historia, pero ha sido difícil explicarla con palabras exactas? ¡A todos nos pasa!</p>
+                                <p class="dialogue assistant">Las computadoras son un poco así. No entienden nuestras ideas directamente. No entienden 'quiero hacer algo divertido' o 'haz que el Micro:bit se vea increíble'. Necesitan instrucciones paso a paso. Y ahí es donde entra el <strong>Vibe Coding</strong>. Es muy simple: su idea genial, su sentimiento, su creatividad... a eso le llamamos su <strong>'vibe'</strong>. Y 'coding' es el proceso de convertir esa 'vibe' en instrucciones. Pero no lo harán solos. Para eso tenemos a nuestro asistente genio, Xolo.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Presentando el Gnius Code Spark (GCS) ⏰ 5 minutos</h3>
+                            <p>Explicar qué es el GCS y mostrar un ejemplo visual para desmitificarlo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Cuando ustedes le cuentan su 'vibe' a Xolo, él no construye el proyecto por ustedes. ¡Eso sería aburrido! Ustedes son los inventores. Lo que Xolo hace es actuar como un <strong>traductor mágico</strong>. Toma su idea y la convierte en un plan, una receta paso a paso. A este plan especial lo llamamos <strong>Gnius Code Spark</strong>, o <strong>GCS</strong> para abreviar.</p>
+                                <p class="dialogue assistant">(Proyectar un ejemplo muy simple de un GCS en la pantalla).</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+Gnius Code Spark: Icono de Corazón
+
+AL INICIO:
+    mostrar icono CORAZÓN
+                                </pre>
+                                <p class="dialogue assistant">Miren, esto es un GCS. Parece un poco un código, pero si lo leen con calma, ¡es muy fácil de entender! Es como la receta de un pastel. Nos dice qué ingredientes necesitamos (los bloques) y en qué orden ponerlos. Nuestro trabajo como inventores será tomar esta receta que nos da Xolo y usarla para encontrar y armar las piezas de LEGO correctas en nuestro taller de MakeCode. Así que, Xolo es el que crea el plan, y <strong>nosotros somos los constructores</strong>. ¿Entendido?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Nuestra Primera Conversación con Xolo ⏰ 10 minutos</h2>
+                <p>Los estudiantes interactúan por primera vez con Xolo para aprender directamente de la IA cómo funciona la colaboración.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Pregunta Correcta para tu Asistente ⏰ 3 minutos</h3>
+                            <p>(Proyectar el chat de Xolo).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, equipo. Antes de empezar a construir nuestro primer proyecto, vamos a hacer algo muy importante. Vamos a preguntarle directamente a nuestro asistente cómo le gusta trabajar. Es como cuando conoces a alguien nuevo y le preguntas cómo le gusta jugar a algo. Así nos aseguramos de que nos entendemos bien desde el principio.</p>
+                                <p class="dialogue assistant">Todos van a abrir su chat con Xolo y van a escribir esta frase exacta. Se las pondré en la pantalla para que la copien. Es nuestro primer comando de aprendizaje:</p>
+                                <p class="dialogue assistant"><strong>(Escribir en grande en la pantalla): `Hola Xolo, soy un estudiante de primaria. ¡Enséñame a trabajar contigo y a leer tu Gnius Code Spark!`</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Aprendiendo Directamente de Xolo ⏰ 7 minutos</h3>
+                            <p>Guiar a los estudiantes para que lean la respuesta de Xolo y conectar sus explicaciones con los bloques reales de MakeCode.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡Excelente! Veo que Xolo les está respondiendo. Lean con atención lo que les dice. ¿Qué les está contando? <strong>(Pedir a 1-2 voluntarios que lean una parte de la respuesta de Xolo en voz alta)</strong>. ¡Exacto! Xolo les está explicando que él les dará un plan, el GCS, y les está enseñando las dos partes más importantes de ese plan: <strong>`AL INICIO`</strong> y <strong>`POR SIEMPRE`</strong>.</p>
+                                 <p class="dialogue assistant">(Mientras los estudiantes leen, reforzar los conceptos proyectando la interfaz de MakeCode).</p>
+                                 <p class="dialogue assistant">Fíjense, Xolo dice que lo que está en `AL INICIO` es algo que el Micro:bit hará solo una vez, justo cuando lo encendemos. ¿Ven este bloque en MakeCode que dice <strong>'al iniciar'</strong>? ¡Es lo mismo! Xolo nos da la pista, y nosotros buscamos el bloque que encaja.</p>
+                                 <p class="dialogue assistant">Y Xolo también habla de `POR SIEMPRE`. ¿Qué creen que significa eso? ¡Correcto! Significa que las instrucciones que estén ahí adentro se repetirán una y otra vez, sin parar, mientras el Micro:bit esté encendido. En nuestro taller de MakeCode, ese es el bloque azul que dice <strong>'para siempre'</strong>. Gracias a Xolo, ya sabemos leer las dos partes más importantes de cualquier receta que nos dé. ¡Buen trabajo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                 <h2>⚡ Actividad 3: ¡Nuestro Primer Gnius Storm! ⏰ 20 minutos</h2>
+                <p>Primera experiencia práctica de Vibe Coding, donde los estudiantes co-crean con Xolo y traducen un GCS a bloques en MakeCode.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La "Vibe" - Nuestra Idea para Xolo ⏰ 5 minutos</h3>
+                            <p>Guiar a los estudiantes para que formulen su idea como un prompt para Xolo y reciban su GCS.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Ha llegado el momento, inventores! Es hora de nuestro primer <strong>Gnius Storm</strong>. Vamos a crear algo real. Nuestra 'vibe' para hoy será algo clásico pero genial: <strong>queremos que nuestro Micro:bit muestre un corazón que parpadea</strong>. Es una forma de darle vida y hacer que nos salude.</p>
+                                <p class="dialogue assistant">Ahora, vamos a traducir esa 'vibe' en una instrucción para Xolo. Abran el chat y escriban esto:</p>
+                                <p class="dialogue assistant"><strong>(Escribir en grande en la pantalla): `Xolo, quiero que mi Micro:bit muestre un corazón que parpadea sin parar.`</strong></p>
+                                <p class="dialogue assistant">(Dar tiempo a que Xolo genere el GCS para cada estudiante. Probablemente será algo así):</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+Gnius Code Spark: Corazón Parpadeante
+
+POR SIEMPRE:
+    mostrar icono CORAZÓN
+    pausa (ms) 500
+    mostrar icono CORAZÓN_PEQUEÑO
+    pausa (ms) 500
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: La Traducción - ¡De Receta a Realidad! ⏰ 10 minutos</h3>
+                            <p>(Guiando el proceso paso a paso, proyectando MakeCode).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡Genial! Ya tienen su receta de Xolo. Ahora, ¡a construir! Vamos a ser traductores. Abran MakeCode.</p>
+                                 <p class="dialogue assistant">1. Miren la primera línea de su GCS. Dice <strong>`POR SIEMPRE:`</strong>. ¿Qué bloque necesitamos en MakeCode? ¡Exacto, el bloque azul <strong>'para siempre'</strong>! Lo arrastramos al centro si no está ya ahí. Todo lo demás irá dentro de este bloque.</p>
+                                 <p class="dialogue assistant">2. Siguiente instrucción en la receta: `mostrar icono CORAZÓN`. ¿Dónde creen que están los bloques para mostrar cosas? ¡En el menú azul de 'Básico'! Abran ese menú. Vean, hay un bloque que dice <strong>'mostrar icono'</strong>. Arrástrenlo y pónganlo DENTRO del bucle 'para siempre'. Ahora hagan clic en el corazón para asegurarse de que el corazón grande esté seleccionado.</p>
+                                 <p class="dialogue assistant">3. ¡Vamos bien! La receta sigue con `pausa (ms) 500`. 'Pausa' significa esperar un poquito. En el mismo menú 'Básico', encontrarán el bloque <strong>'pausa (ms)'</strong>. Sáquenlo y colóquenlo justo debajo del bloque del corazón. El número 500 es medio segundo. ¡Lo dejamos así!</p>
+                                 <p class="dialogue assistant">4. Siguiente línea: `mostrar icono CORAZÓN_PEQUEÑO`. ¿Qué hacemos? ¡Lo mismo de antes! Vayan a 'Básico', saquen OTRO bloque de <strong>'mostrar icono'</strong>, pónganlo debajo de la pausa, y esta vez, seleccionen el corazón pequeño.</p>
+                                 <p class="dialogue assistant">5. Y la última línea de la receta: `pausa (ms) 500`. ¡Ya saben qué hacer! Saquen otro bloque de <strong>'pausa'</strong> y pónganlo al final, dentro del bucle. ¡Listo!</p>
+                                 <p class="dialogue assistant">Miren el simulador a la izquierda. ¿Qué está pasando? ¡Su corazón está parpadeando! ¡Lo lograron! Han traducido su primer Gnius Code Spark.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: La Victoria del Inventor ⏰ 5 minutos</h3>
+                            <p>Cerrar la actividad celebrando el logro y reforzando la metodología aprendida.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Equipo, esto es increíble! Quiero que se den cuenta de lo que acaban de hacer. No solo arrastraron bloques al azar. Tuvieron una idea, la comunicaron a un asistente de IA, recibieron un plan estructurado y ustedes, como los inventores, lo construyeron en el mundo digital. <strong>Xolo les dio la lógica, pero ustedes hicieron el trabajo de construcción y lo hicieron funcionar.</strong> Esto es ser un creador en el siglo XXI. ¡Estoy muy orgulloso de ustedes! ¡Guarden su proyecto con el nombre 'Mi Primer Vibe' y felicidades por completar su primer Gnius Storm!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
